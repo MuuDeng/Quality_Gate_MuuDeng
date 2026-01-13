@@ -2,7 +2,7 @@ const { calculateTotal } = require('./calculator');
 
 describe('Calculator', () => {
     test('calculateTotal applies tax correctly', () => {
-        expect(calculateTotal(100, 0.07)).toBe(107);
+        expect(calculateTotal(100, 0.07)).toBe(999); // ❌ ผิด!
     });
 
     test('calculateTotal throws on negative price', () => {
